@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Adam's Coverage Plan — May 8–14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --evergreen: #135050;
+  --evergreen-deep: #0E3C3C;
+  --evergreen-soft: rgba(19, 80, 80, 0.08);
+  --emerald: #07C799;
+  --emerald-deep: #11AB85;
+  --emerald-soft: rgba(7, 199, 153, 0.10);
+  --bg: #FAFBF9;
+  --surface: #FFFFFF;
+  --border: #E5EAE8;
+  --muted: #5A6E6E;
+  --font: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--evergreen-deep);
+  line-height: 1.6;
+  font-size: 17px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 88px 32px 120px;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 88px;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--emerald-deep);
+  margin: 0 0 14px;
+}
+
+h1 {
+  font-family: var(--font);
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: var(--evergreen);
+  margin: 0 0 18px;
+}
+
+.dateline {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--evergreen-deep);
+  margin: 0 0 36px;
+  letter-spacing: -0.005em;
+}
+
+/* Emergency card */
+.emergency {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--emerald);
+  border-radius: 14px;
+  padding: 18px 24px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.emergency-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.emergency-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--evergreen);
+  letter-spacing: -0.01em;
+}
+
+/* Sections */
+section { margin-bottom: 76px; }
+
+h2 {
+  font-family: var(--font);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--evergreen);
+  margin: 0 0 32px;
+}
+
+h3 {
+  font-family: var(--font);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--evergreen);
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+/* Coverage map */
+.coverage {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.coverage-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+.coverage-row:last-child { border-bottom: none; }
+.coverage-row .area {
+  font-weight: 600;
+  color: var(--evergreen);
+}
+.coverage-row .owner {
+  color: var(--evergreen-deep);
+}
+
+/* Focus blocks */
+.focus-block { margin-bottom: 40px; }
+.focus-block:last-child { margin-bottom: 0; }
+.focus-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.focus-block li {
+  padding: 12px 0 12px 26px;
+  position: relative;
+  border-top: 1px solid var(--border);
+  color: var(--evergreen-deep);
+}
+.focus-block li:first-child {
+  border-top: none;
+  padding-top: 4px;
+}
+.focus-block li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 21px;
+  width: 9px;
+  height: 9px;
+  background: var(--emerald);
+  border-radius: 50%;
+}
+.focus-block li:first-child::before { top: 13px; }
+
+.flag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--evergreen);
+  background: var(--evergreen-soft);
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* On my return — softer block */
+.return-block {
+  background: var(--emerald-soft);
+  border-radius: 14px;
+  padding: 28px 32px;
+}
+.return-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.return-block li {
+  color: var(--evergreen);
+  font-weight: 500;
+  padding: 6px 0 6px 26px;
+  position: relative;
+}
+.return-block li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--emerald-deep);
+  font-weight: 700;
+}
+
+/* PTO norms */
+.norms {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 32px;
+}
+.norms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.norms li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.norms li:last-child { border-bottom: none; }
+.norms strong { color: var(--evergreen); }
+
+/* Sign-off */
+.signoff {
+  margin-top: 88px;
+  padding-top: 36px;
+  border-top: 1px solid var(--border);
+  font-size: 1.1rem;
+  color: var(--evergreen);
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container { padding: 56px 22px 88px; }
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.2rem; }
+  .dateline { font-size: 1.1rem; }
+  .coverage-row { grid-template-columns: 1fr; gap: 4px; padding: 16px 20px; }
+  .return-block, .norms { padding: 20px 22px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="hero">
+    <p class="eyebrow">Out of Office</p>
+    <h1>Adam's Coverage Plan</h1>
+    <p class="dateline">Friday, May 8 &nbsp;&rarr;&nbsp; Thursday, May 14</p>
+    <div class="emergency">
+      <span class="emergency-label">Emergency text only</span>
+      <span class="emergency-number">(801) 628-8694</span>
+    </div>
+  </header>
+
+  <section>
+    <p class="eyebrow">Coverage Map</p>
+    <h2>Who's covering what</h2>
+    <div class="coverage">
+      <div class="coverage-row"><div class="area">AR / PR / Comms</div><div class="owner">Alex King</div></div>
+      <div class="coverage-row"><div class="area">Campaigns &amp; new projects</div><div class="owner">Natasha Kading</div></div>
+      <div class="coverage-row"><div class="area">Content, Blog &amp; Social</div><div class="owner">Maggie Moore</div></div>
+      <div class="coverage-row"><div class="area">Website &mdash; frontend</div><div class="owner">Nick Ludato</div></div>
+      <div class="coverage-row"><div class="area">Website &mdash; backend</div><div class="owner">Cory McDaniel</div></div>
+      <div class="coverage-row"><div class="area">Customer Marketing &amp; Stories</div><div class="owner">Noah Garretson</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Active Focus</p>
+    <h2>What I'm hoping to see move</h2>
+
+    <div class="focus-block">
+      <h3>Campaigns</h3>
+      <ul>
+        <li>Prepping the May 20 Marketing Monthly &mdash; vertical campaigns update</li>
+        <li>MCP webinar AQL flow &mdash; following engagement from the field</li>
+        <li>June Launch &mdash; announcement readiness</li>
+      </ul>
+    </div>
+
+    <div class="focus-block">
+      <h3>AR / PR / Comms</h3>
+      <ul>
+        <li>Agency RFP &mdash; ideally narrowed to recommendations by 5/22</li>
+        <li>Continuing to socialize the comms pivot (Claire)</li>
+        <li>Travel survey &mdash; fielding</li>
+        <li>Incident comms <span class="flag">Owner TBD</span> &mdash; flag Claire if anything emerges</li>
+      </ul>
+    </div>
+
+    <div class="focus-block">
+      <h3>Content, Blog &amp; Social</h3>
+      <ul>
+        <li>End-to-end demo &mdash; hoping for v2 by the time I'm back</li>
+        <li>Solutions Catalog 2.0 &mdash; good progress on Retail</li>
+        <li>Market survey with Seige &mdash; start collecting responses</li>
+        <li>SME program &mdash; scaling and publishing; we need AI contributions</li>
+      </ul>
+    </div>
+
+    <div class="focus-block">
+      <h3>Website</h3>
+      <ul>
+        <li>GEO wins with Seige (Nick)</li>
+        <li>Progress on the Decoration project (Cory)</li>
+        <li>Summer release &mdash; stage looks great; let's socialize</li>
+        <li>Core site (Ori + Stella) looking good; let's socialize</li>
+        <li>New pages &mdash; Competitive and SME profiles in progress</li>
+      </ul>
+    </div>
+
+    <div class="focus-block">
+      <h3>Customer Marketing &amp; Stories</h3>
+      <ul>
+        <li>Customer Awards &mdash; exec alignment</li>
+        <li>Noah has a well of new quotes (and hopefully blogs!) coming</li>
+        <li>FGAC / SCIIM &mdash; let's clear it</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">On My Return</p>
+    <h2>Picking back up Friday 5/15</h2>
+    <div class="return-block">
+      <ul>
+        <li>Set up the pricing page meeting</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">A Friendly Reminder</p>
+    <h2>Our PTO norms</h2>
+    <div class="norms">
+      <ul>
+        <li><strong>True emergencies are rare.</strong> We make marketing software, not pacemakers. Reserve the emergency line for outages, injuries, or similar.</li>
+        <li><strong>Unplug your way.</strong> Mute Slack, sign out, uninstall it &mdash; whatever actually helps you recharge.</li>
+        <li><strong>Tasks queued during OOO have extended turnaround.</strong> Anything that lands this week picks up the week of return.</li>
+        <li><strong>Please don't DM teammates who are away.</strong> Use scheduled-send or email and clearly note that it can wait.</li>
+        <li><strong>Group threads keep going,</strong> but don't expect engagement until folks are back.</li>
+      </ul>
+    </div>
+  </section>
+
+  <p class="signoff">Thank you, team. See you Friday the 15th. &mdash; Adam</p>
+
+</div>
+</body>
+</html>
